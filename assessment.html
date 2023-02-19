@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Assessment</title>
+	<style>
+		tfoot{text-align: center;}
+		h2{font-family: serif;}
+	</style>
+</head>
+<body>
+
+	<h2>TEXT</h2>
+	<p><b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor orci eu lobortis elementum nibh. Etiam dignissim diam quis enim lobortis scelerisque. Elit at imperdiet dui accumsan sit amet nulla facilisi. </p>
+	<p><blockquote cite="https://loremipsum.io/"><em><b>Nisl</b> condimentum id venenatis a condimentum vitae sapien pellentesque. Eget sit amet tellus cras adipiscing. Gravida cum sociis natoque penatibus et. Ut consequat semper viverra nam libero justo laoreet. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae.</em></blockquote></p>
+	<p><b>Elit</b> scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In mollis nunc sed id semper risus in. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Justo nec ultrices dui sapien eget mi proin sed libero.</p>
+
+	<h2>TABLE</h2>
+
+	<table>
+		<caption>Scores by quarter</caption>
+		<thead>
+			<tr>
+				<td scope="col" rowspan="2"><b>Team Name</b></td>
+				<td scope="col" colspan="2"><b>First Half</b></td>
+				<td scope="col" colspan="2"><b>Second Half</b></td>
+				<td scope="col" rowspan="2"><b>Final</b></td>
+			</tr>
+			<tr>
+				<td scope="col"><b>Q1</b></td>
+				<td scope="col"><b>Q2</b></td>
+				<td scope="col"><b>Q3</b></td>
+				<td scope="col"><b>Q4</b></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td scope="row">Denver</td>
+				<td >7</td>
+				<td >3</td>
+				<td >0</td>
+				<td >7</td>
+				<td >17</td>
+			</tr>
+			<tr>
+				<td scope="row">Chicago</td>
+				<td>0</td>
+				<td>6</td>
+				<td>3</td>
+				<td>6</td>
+				<td >15</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td><b>Total</b></td>
+				<td>7</td>
+				<td>9</td>
+				<td>3</td>
+				<td>13</td>
+				<td><b>32</b></td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<h2><b>LIST</b></h2>
+	<ul>
+		<li><img src="https://static.wikia.nocookie.net/logopedia/images/0/08/62DB.gif/revision/latest?cb=20110205021027" alt="Bronco's logo 62-67" width="100" height="100"/></li>
+		<li style="list-style-type: none"><a href="https://www.denverbroncos.com/">Denver Broncos</a></li>
+		<ul>
+			<li>Coach Gary Kubiak</li>
+			<li>QB</li>
+			<ol>
+				<li>Brock Osweiler</li>
+				<li>Trevor Siemian</li>
+				<li>Peyton Manning (injured)</li>
+			</ol>
+		</ul>
+
+	</ul>
+	<ul>
+		<li><img src=https://static.wikia.nocookie.net/logopedia/images/4/48/Xawpw5ke7zfylp9h4fuo2i8ce.gif/revision/latest?cb=20110905180234 alt="Bear's logo 46-61" width="100" height="100"/></li>
+		<li style="list-style-type: none"><a href="https://www.chicagobears.com/">Chicago Bears</a></li>
+		<ul>
+			<li>Coach John Fox</li>
+			<li>QB</li>
+			<ol>
+				<li>Jay Cutler</li>
+				<li>Jimmy Clausen</li>
+			</ol>
+		</ul>
+
+	</ul>
+
+	<h2><b>FORM</b></h2>
+
+	<form>
+		First: <input type="text" name="firstname">
+		Last: <input type="text" name="lastname"><br>
+		<label for="Sports">Favorite sport:</label><br>
+		<select id="Sports" name="Sports">
+			<option value="Dodgebow">Dodgebow</option>
+			<option value="Toe Wrestling">Toe Wrestling</option>
+			<option value="Chicken Racing">Chicken Racing</option>
+			<option value="Carpet Ball">Carpet Ball</option>
+			<option value="Wheelbarrow Racing">Wheelbarrow Racing</option>
+			<option value="Quidditch">Quidditch</option>
+			<option value="Cheese Rolling">Cheese Rolling</option>
+		</select><br>
+		<label for="I have:"> I have:</label>
+		<input type="checkbox" id="Sports" name="Attended" value="Played">
+		<label for="Attended"> Attended</label>
+		<input type="checkbox" id="Sports" name="Played" value="Played">
+		<label for="Played"> Played</label>
+		<input type="checkbox" id="Sports" name="Coached" value="Coached">
+		<label for="Coached"> Coached</label>
+		<input type="checkbox" id="Sports" name="Wondered About" value="Wondered About">
+		<label for="Wondered About"> Wondered About</label>
+		<input type="checkbox" id="Sports" name="Bet on" value="Bet on">
+		<label for="Bet on"> Bet on</label>
+		<label for="this sport"> this sport</label><br>
+		<input type="submit" value="Submit Query"><br>
+		<label for="For this sport I prefer the:"> For this sport I prefer the:</label>
+		<input type="radio" name="Amateur" value="level"> Amateur
+		<input type="radio" name="College" value="level"> College
+		<input type="radio" name="Professional" value="level"> Professional
+		<input type="radio" name="Legendary" value="level"> Legendary Level<br>
+		<input type="submit" value="Submit Query">
+	</form>
+</body>
+</html>
