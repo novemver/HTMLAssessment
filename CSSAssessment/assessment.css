@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
 	color: saddlebrown;
+	font-family: sans-serif;
 }
 
 table, th, td {
@@ -8,20 +9,35 @@ table, th, td {
 	padding: 5px;
 	text-align: center;
 }
+thead {
+	color: darkblue;
+	background-color: lightgray;
+}
+
 li {
 	list-style-type: square;
 }
-#teamRoster ul {
+#teamRoster img {
+	display: none;
+}
+
+#teamRoster > li:first-child {
+	background-color: rgba(255, 255, 255, .6); 
+	background-blend-mode: color;
 	background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
 	background-repeat: no-repeat;
-	padding: 50px;
+	background-size: contain;
+	list-style: none;
 }
- #teamRoster ul ul ul{
+ #teamRoster > li:last-child{
+ 	background-color: rgba(255, 255, 255, .6); 
+	background-blend-mode: color;
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
 	background-repeat: no-repeat;
-	padding: 50px;
+	background-size: contain;
+	list-style: none;
 }
-a:hover {
+.hyperLink:hover {
 	text-decoration: none;
 	background-color: slateblue;
 	color: white;
@@ -33,4 +49,10 @@ blockquote {
 }
 #checkbox-grid li {
 	list-style-type: none;
+}
+#teamRoster li ul li li:first-child{
+	font-weight: bold;
+}
+tr:nth-child(odd){
+background-color: orange;
 }
